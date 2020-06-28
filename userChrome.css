@@ -1,0 +1,118 @@
+.titlebar-buttonbox-container{
+  display: none;
+}
+#navigator-toolbox {
+  border: 0px !important;
+  min-width: 500px !important;
+  }
+#TabsToolbar {
+  margin-top: -1px !important;
+  margin-bottom: 1px !important;
+  margin-left: 25vw !important;
+  max-height: 32px !important;
+}
+.tabbrowser-arrowscrollbox {
+  height: 32px !important;
+  min-height: 32px !important;
+}
+
+.titlebar-placeholder[type="pre-tabs"] {
+  display: none !important;
+}
+
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  border-left : none !important;
+}
+
+.tab-line {
+  display: none !important;
+}
+
+:root {
+  --toolbox-border-bottom-color: transparent !important;
+}
+
+#nav-bar {
+  background: transparent !important;
+  margin-top: -32px !important;
+  margin-bottom: -1px !important;
+  margin-right: 72vw !important;
+  height: 32px !important;
+}
+#urlbar-container {
+  min-width: 100px !important;
+}
+#urlbar {
+  background: transparent !important;
+  border: none !important;
+}
+#page-action-buttons {
+  display: none !important;
+}
+
+.tab-background:not([selected=true]), .tab-background[selected="true"], #titlebar-buttonbox,
+#TabsToolbar, #PersonalToolbar, #urlbar, #nav-bar {
+  background: #31363b !important;
+}
+#back-button {
+  margin-left: 6px !important;
+}
+#back-button:not(:hover),
+#back-button:not(:hover) > .toolbarbutton-icon {
+  background: none !important;
+}
+
+#back-button:hover,
+#back-button:hover > .toolbarbutton-icon {
+  border-radius: 2px !important;
+}
+
+#urlbar .urlbar-input-box {
+  text-align: center;
+}
+#PanelUI-button {
+  visibility: collapse !important;
+  display: none !important;
+  border-image-slice: 0 !important;
+  border: none !important;
+}
+.bookmark-item > .toolbarbutton-icon {
+  display: none !important;
+}
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]: {
+  margin-inline-end: 0px !important;
+}
+.tabbrowser-tab .tab-icon-image {
+  display: none !important;
+}
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  border-left: none !important;
+}
+.urlbar-history-dropmarker,
+#urlbar:hover > .urlbar-textbox-container > .urlbar-history-dropmarker {
+  display: none !important;
+}
+.tab-label {
+  -moz-box-flex: 1 !important; text-align: center !important;
+}
+#TabsToolbar .tabbrowser-tab[selected] {
+  color: white !important;
+  font-weight: bold !important;
+}
+.tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
+  visibility: collapse !important;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}
+#personal-bookmarks #PlacesToolbarItems {
+  -moz-box-pack: center;
+}
+.urlbar-input-box > .urlbar-input::placeholder {
+  opacity: 0 !important;
+}
+#main-window:not([customizing]):not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse;
+}
